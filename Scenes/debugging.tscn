@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cl6d6pst3honj"]
+
+[ext_resource type="Texture2D" uid="uid://bnw4k6pqsn4mc" path="res://Sprites/Buttons/GreyButtonEmpty.png" id="1_dbm2e"]
+
+[node name="Debugging" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_dbm2e")

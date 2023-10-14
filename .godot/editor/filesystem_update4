@@ -1,0 +1,9 @@
+res://default_env.tres
+res://Scenes/Maps/Map1.tscn
+res://Scenes/Maps/Map1.tres
+res://Scenes/ScenceHandler.tscn
+res://Scenes/UI/in_game_ui.tscn
+res://Scenes/game_scene.tscn
+res://Scenes/Enemies/slime_enemy.tscn
+res://Scenes/Turrets/red_turret.tscn
+res://Scenes/Turrets/blue_turret.tscn

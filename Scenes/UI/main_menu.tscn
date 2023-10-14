@@ -1,0 +1,159 @@
+[gd_scene load_steps=7 format=3 uid="uid://crgx5k42a11nf"]
+
+[ext_resource type="Script" path="res://Scenes/UI/main_menu.gd" id="1_adem5"]
+[ext_resource type="Texture2D" uid="uid://lk0npo56qlod" path="res://Sprites/Buttons/GreyButtonEmptyLong.png" id="1_ngstd"]
+[ext_resource type="Texture2D" uid="uid://60xewryh40n8" path="res://Sprites/Buttons/GreybuttonEmptyPressedLong.png" id="2_7qbkb"]
+[ext_resource type="PackedScene" uid="uid://b2m2ktuxf7coa" path="res://Scenes/main_menu_background.tscn" id="2_gmcit"]
+[ext_resource type="FontFile" uid="uid://lflbtisfcc2w" path="res://Fonts/ka1.ttf" id="3_rrxpm"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_xot5w"]
+font = ExtResource("3_rrxpm")
+font_size = 36
+font_color = Color(0.84, 0.861333, 1, 1)
+
+[node name="Main Menu" type="Control"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_adem5")
+
+[node name="MainMenu Background" parent="." instance=ExtResource("2_gmcit")]
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+custom_minimum_size = Vector2(1150, 650)
+layout_mode = 0
+size_flags_horizontal = 2
+theme_override_constants/margin_left = 70
+theme_override_constants/margin_top = 70
+theme_override_constants/margin_right = 70
+theme_override_constants/margin_bottom = 70
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+size_flags_horizontal = 8
+alignment = 1
+
+[node name="NewGame" type="TextureButton" parent="MarginContainer/VBoxContainer"]
+texture_filter = 1
+custom_minimum_size = Vector2(375, 96)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("1_ngstd")
+texture_pressed = ExtResource("2_7qbkb")
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/NewGame"]
+texture_filter = 1
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -121.5
+offset_top = -28.0
+offset_right = 122.5
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "New  Game"
+label_settings = SubResource("LabelSettings_xot5w")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Settings" type="TextureButton" parent="MarginContainer/VBoxContainer"]
+texture_filter = 1
+custom_minimum_size = Vector2(375, 96)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("1_ngstd")
+texture_pressed = ExtResource("2_7qbkb")
+stretch_mode = 5
+
+[node name="Label2" type="Label" parent="MarginContainer/VBoxContainer/Settings"]
+texture_filter = 1
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -122.5
+offset_top = -26.0
+offset_right = 121.5
+offset_bottom = 18.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Settings"
+label_settings = SubResource("LabelSettings_xot5w")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="About" type="TextureButton" parent="MarginContainer/VBoxContainer"]
+texture_filter = 1
+custom_minimum_size = Vector2(375, 96)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("1_ngstd")
+texture_pressed = ExtResource("2_7qbkb")
+stretch_mode = 5
+
+[node name="Label3" type="Label" parent="MarginContainer/VBoxContainer/About"]
+texture_filter = 1
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -122.5
+offset_top = -29.0
+offset_right = 121.5
+offset_bottom = 15.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "About"
+label_settings = SubResource("LabelSettings_xot5w")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control" type="Control" parent="MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="Quit" type="TextureButton" parent="MarginContainer/VBoxContainer"]
+texture_filter = 1
+custom_minimum_size = Vector2(375, 96)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("1_ngstd")
+texture_pressed = ExtResource("2_7qbkb")
+stretch_mode = 5
+
+[node name="Label4" type="Label" parent="MarginContainer/VBoxContainer/Quit"]
+texture_filter = 1
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -121.5
+offset_top = -27.0
+offset_right = 122.5
+offset_bottom = 17.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Quit"
+label_settings = SubResource("LabelSettings_xot5w")
+horizontal_alignment = 1
+vertical_alignment = 1

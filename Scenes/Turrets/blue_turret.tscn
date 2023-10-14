@@ -1,0 +1,68 @@
+[gd_scene load_steps=8 format=3 uid="uid://pu0mgu0f3pbv"]
+
+[ext_resource type="Texture2D" uid="uid://8hhggefih2qm" path="res://Sprites/Turrets/turret_BASE.png" id="1_jhe5i"]
+[ext_resource type="Script" path="res://Scenes/Turrets/blue_turret.gd" id="1_o8c4t"]
+[ext_resource type="Texture2D" uid="uid://wmag5slmmgtg" path="res://Sprites/Turrets/TurretRange.png" id="2_3ehg4"]
+[ext_resource type="Texture2D" uid="uid://dph2wyw7lp4e1" path="res://Sprites/Turrets/turret_FACE_blue.png" id="2_i2r4p"]
+
+[sub_resource type="Animation" id="Animation_btskq"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_k5n03"]
+resource_name = "shoot"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7, 9]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_benih"]
+_data = {
+"RESET": SubResource("Animation_btskq"),
+"shoot": SubResource("Animation_k5n03")
+}
+
+[node name="BlueTurret" type="Node2D"]
+position = Vector2(24, 24)
+scale = Vector2(1.5, 1.5)
+script = ExtResource("1_o8c4t")
+
+[node name="TurretRange" type="Sprite2D" parent="."]
+visible = false
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("2_3ehg4")
+
+[node name="BaseSprite" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_jhe5i")
+
+[node name="TurretSprite" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("2_i2r4p")
+offset = Vector2(4, 0)
+vframes = 10
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="TurretSprite"]
+speed_scale = 2.24
+libraries = {
+"": SubResource("AnimationLibrary_benih")
+}

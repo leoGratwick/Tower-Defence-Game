@@ -1,0 +1,16 @@
+Sprite2D
+TileMap
+Node2D
+Control
+VBoxContainer
+TextureButton
+HBoxContainer
+Container
+MarginContainer
+CollisionShape2D
+CharacterBody2D
+PathFollow2D
+Path2D
+Label
+AnimationPlayer
+AnimationTree

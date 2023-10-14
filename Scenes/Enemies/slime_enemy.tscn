@@ -1,0 +1,64 @@
+[gd_scene load_steps=6 format=3 uid="uid://cdd2gyrde1x7r"]
+
+[ext_resource type="Texture2D" uid="uid://xhpho7i7b1t4" path="res://Sprites/Enemies/U_Walk.png" id="1_fwpyf"]
+[ext_resource type="Script" path="res://Scenes/Enemies/slime_enemy.gd" id="1_xvnds"]
+
+[sub_resource type="Animation" id="Animation_cexmd"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_8cktp"]
+resource_name = "walk"
+length = 0.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_mq451"]
+_data = {
+"RESET": SubResource("Animation_cexmd"),
+"walk": SubResource("Animation_8cktp")
+}
+
+[node name="SlimeEnemy" type="PathFollow2D"]
+z_index = 6
+scale = Vector2(0.5, 0.5)
+rotates = false
+script = ExtResource("1_xvnds")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+position = Vector2(0, -8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+texture_filter = 1
+texture = ExtResource("1_fwpyf")
+hframes = 6
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CharacterBody2D/Sprite2D"]
+speed_scale = 0.8
+libraries = {
+"": SubResource("AnimationLibrary_mq451")
+}

@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://dbaqsphkof0s6"]
+
+[ext_resource type="Script" path="res://Scenes/game_scene.gd" id="1_2yucc"]
+[ext_resource type="PackedScene" uid="uid://fkrslh3yc2wr" path="res://Scenes/UI/in_game_ui.tscn" id="2_aitlo"]
+
+[node name="Game Scene" type="Node2D"]
+process_mode = 3
+script = ExtResource("1_2yucc")
+
+[node name="In game UI" parent="." instance=ExtResource("2_aitlo")]
+offset_right = 1152.0
+offset_bottom = 648.0
