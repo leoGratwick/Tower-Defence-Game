@@ -1,0 +1,93 @@
+[gd_scene load_steps=8 format=3 uid="uid://dh7d4m06m8lqx"]
+
+[ext_resource type="FontFile" uid="uid://lflbtisfcc2w" path="res://Fonts/ka1.ttf" id="1_jraed"]
+[ext_resource type="Script" path="res://Scenes/UI/game_lost_screen.gd" id="1_ki1c3"]
+[ext_resource type="Texture2D" uid="uid://bwdnodle50wcr" path="res://Sprites/Buttons/Exit.png" id="3_l0hdf"]
+[ext_resource type="Texture2D" uid="uid://k7m2s644slwf" path="res://Sprites/Buttons/ExitPressed.png" id="4_is1ds"]
+[ext_resource type="Texture2D" uid="uid://bdhhw0oew6eu7" path="res://Sprites/Buttons/Restart.png" id="5_f3ctd"]
+[ext_resource type="Texture2D" uid="uid://vtu2lj18dxu2" path="res://Sprites/Buttons/RestartPressed.png" id="6_x3pjn"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_wd5qv"]
+font = ExtResource("1_jraed")
+font_size = 70
+font_color = Color(0.839216, 0.282353, 0.231373, 1)
+outline_size = 30
+outline_color = Color(0, 0, 0, 1)
+
+[node name="GameLostScreen" type="Control"]
+z_index = 16
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 7.0
+offset_bottom = 6.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ki1c3")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_top = 30
+theme_override_constants/margin_right = 30
+theme_override_constants/margin_bottom = 30
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HBoxContainer3"]
+layout_mode = 2
+alignment = 2
+
+[node name="Control" type="Control" parent="MarginContainer/HBoxContainer3/VBoxContainer"]
+custom_minimum_size = Vector2(300, 500)
+layout_mode = 2
+
+[node name="Restart" type="TextureButton" parent="MarginContainer/HBoxContainer3/VBoxContainer"]
+process_mode = 3
+texture_filter = 1
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+toggle_mode = true
+texture_normal = ExtResource("5_f3ctd")
+texture_pressed = ExtResource("6_x3pjn")
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="MarginContainer/HBoxContainer3"]
+texture_filter = 1
+layout_mode = 2
+text = "You Lost !"
+label_settings = SubResource("LabelSettings_wd5qv")
+horizontal_alignment = 1
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="MarginContainer/HBoxContainer3"]
+layout_mode = 2
+alignment = 2
+
+[node name="Control2" type="Control" parent="MarginContainer/HBoxContainer3/VBoxContainer2"]
+custom_minimum_size = Vector2(300, 500)
+layout_mode = 2
+
+[node name="Exit" type="TextureButton" parent="MarginContainer/HBoxContainer3/VBoxContainer2"]
+process_mode = 3
+texture_filter = 1
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 8
+toggle_mode = true
+texture_normal = ExtResource("3_l0hdf")
+texture_pressed = ExtResource("4_is1ds")
+stretch_mode = 5
+
+[connection signal="pressed" from="MarginContainer/HBoxContainer3/VBoxContainer/Restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="MarginContainer/HBoxContainer3/VBoxContainer2/Exit" to="." method="_on_exit_pressed"]

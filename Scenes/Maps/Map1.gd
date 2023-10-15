@@ -23,49 +23,31 @@ func _physics_process(delta):
 func spawn(enemy_type):
 	if currently_spawning:
 		var enemy = load("res://Scenes/Enemies/"+ enemy_type +".tscn").instantiate()
-		get_node("Enemy Path").add_child(enemy)	
-		#print("enemy spawned")
+		get_node("Enemy Path").add_child(enemy)
+		get_parent().get_node("In game UI").connect_enemy(enemy)
+		
+
 	
-func spawn_enemies():
-	var count = 0
-	print("spawn enemies called")
-	print(enemy_waves)
-	for wave in enemy_waves:
-			for j in wave:
-				print(" enemy " +j)
-				spawn(j)
-				wave.remove(j)
-				print(enemy_waves)
-				await get_tree().create_timer(5).timeout
-				print("finished waiting")
-			print("next wave")
-	currently_spawning = false
-	
+
 
 
 func _on_start_spawning_enemies():
-	print("spawn enemies called")
+	
 	if current_wave < total_waves:
 		for enemy in enemy_waves[current_wave]:
 			spawn(enemy)
-			print("spawned next enemy")
 			
 			await get_tree().create_timer(2).timeout
-			print("finished waiting")
-		#enemy_waves.pop_front()
 		current_wave += 1
-		await get_tree().create_timer(5).timeout
+		await get_tree().create_timer(10).timeout
 		currently_spawning = false
 	else: 
-		finished_spawning_all= true
+		finished_spawning_all = true
 		
 		
-	print("Current wave: ")
-	print(current_wave)
-	print("Finished spawning all: ")
-	print( finished_spawning_all)
-	print("Currently spawning: ") 
-	print( currently_spawning)
+
+
+	
 	
 		
 	

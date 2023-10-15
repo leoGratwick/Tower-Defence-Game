@@ -1,0 +1,55 @@
+[gd_scene load_steps=6 format=3 uid="uid://br7vppgxs0ij4"]
+
+[ext_resource type="Script" path="res://Coin.gd" id="1_oggih"]
+[ext_resource type="Texture2D" uid="uid://dpc2la0xdvwo3" path="res://Sprites/Other/coin3_16x16.png" id="2_h5hmc"]
+
+[sub_resource type="Animation" id="Animation_whimq"]
+resource_name = "coin_spin"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 13]
+}
+
+[sub_resource type="Animation" id="Animation_4y2xe"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_t331s"]
+_data = {
+"RESET": SubResource("Animation_4y2xe"),
+"coin_spin": SubResource("Animation_whimq")
+}
+
+[node name="Coin" type="Node2D"]
+script = ExtResource("1_oggih")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(8, 8)
+texture = ExtResource("2_h5hmc")
+hframes = 14
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite2D"]
+libraries = {
+"": SubResource("AnimationLibrary_t331s")
+}

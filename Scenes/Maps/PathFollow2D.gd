@@ -13,4 +13,4 @@ func _process(delta):
 	
 	# Wrap the offset back to 0 when it reaches 1 to loop the path
 	if progress_ratio >= 1.0:
-		progress_ratio = 0.0
+		queue_free()

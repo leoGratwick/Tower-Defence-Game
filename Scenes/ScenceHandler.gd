@@ -26,3 +26,12 @@ func on_mainmenu_made():
 	get_node("Main Menu/MarginContainer/VBoxContainer/Quit").connect("pressed", game_quit)
 	get_node("Main Menu/MarginContainer/VBoxContainer/NewGame").connect("pressed", new_game_pressed)
 	
+func restart_level():
+	get_child(0).queue_free()
+	var new_game_scene = load("res://Scenes/game_scene.tscn").instantiate()
+	var map = load("res://Scenes/Maps/Map1.tscn").instantiate()
+	map.name = "Map1"
+	new_game_scene.name = "Game Scene"
+	new_game_scene.add_child(map)
+	add_child(new_game_scene)
+	Engine.time_scale = 1

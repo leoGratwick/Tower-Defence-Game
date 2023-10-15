@@ -1,9 +1,12 @@
-[gd_scene load_steps=8 format=3 uid="uid://bwykhj01gtgny"]
+[gd_scene load_steps=9 format=3 uid="uid://bwykhj01gtgny"]
 
 [ext_resource type="Texture2D" uid="uid://8hhggefih2qm" path="res://Sprites/Turrets/turret_BASE.png" id="1_apdqg"]
 [ext_resource type="Script" path="res://Scenes/Turrets/red_turret.gd" id="1_x5c14"]
 [ext_resource type="Texture2D" uid="uid://wmag5slmmgtg" path="res://Sprites/Turrets/TurretRange.png" id="2_ff130"]
 [ext_resource type="Texture2D" uid="uid://bv6gbom2cs0b7" path="res://Sprites/Turrets/turret_FACE - Copy.png" id="2_vjsyc"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ratbk"]
+radius = 200.0
 
 [sub_resource type="Animation" id="Animation_btskq"]
 length = 0.001
@@ -46,10 +49,16 @@ position = Vector2(24, 24)
 scale = Vector2(1.5, 1.5)
 script = ExtResource("1_x5c14")
 
-[node name="TurretRange" type="Sprite2D" parent="."]
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="TurretRange" type="Sprite2D" parent="Area2D"]
 visible = false
 scale = Vector2(0.35, 0.35)
 texture = ExtResource("2_ff130")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+scale = Vector2(0.35, 0.35)
+shape = SubResource("CircleShape2D_ratbk")
 
 [node name="BaseSprite" type="Sprite2D" parent="."]
 texture_filter = 1

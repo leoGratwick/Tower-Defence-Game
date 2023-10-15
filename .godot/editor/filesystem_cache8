@@ -1,48 +1,54 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1697321804
-default_env.tres::Environment::8099985550878108818::1697321563::0::1::::<><>::
+::res://::1697381653
+default_env.tres::Environment::8099985550878108818::1697381653::0::1::::<><>::
 icon.png::CompressedTexture2D::6991110015692068151::1697157705::1697159396::1::::<><>::
-::res://Fonts/::1697195621
+README.md::TextFile::-1::1697322102::0::1::::<><>::
+Coin.gd::GDScript::-1::1697323407::0::1::::<>Node2D<>::
+::res://Fonts/::1697323856
 ka1.ttf::FontFile::783069852629680340::1697195545::1697195621::1::::<><>::
+main_menu.tres::LabelSettings::6579141254251528377::1697323856::0::1::::<><>::uid://lflbtisfcc2w::::res://Fonts/ka1.ttf
 ::res://Liscence/::1697195612
 License.txt::TextFile::-1::1697113989::0::1::::<><>::
 liscence.txt::TextFile::-1::1697195571::0::1::::<><>::
 read_me.txt::TextFile::-1::1697158353::0::1::::<><>::
-::res://Scenes/::1697321456
+::res://Scenes/::1697381269
 controlTest.gd::GDScript::-1::1697284870::0::1::::<>Control<>::
-controlTest.tscn::PackedScene::637109507993321046::1697292659::0::1::::<><>::res://Scenes/controlTest.gd<>uid://bwykhj01gtgny::::res://Scenes/Turrets/red_turret.tscn
-debugging.tscn::PackedScene::5609152684927476435::1697315152::0::1::::<><>::uid://bnw4k6pqsn4mc::::res://Sprites/Buttons/GreyButtonEmpty.png
-game_scene.gd::GDScript::-1::1697319130::0::1::::<>Node2D<>::
-game_scene.tscn::PackedScene::7230455310029059183::1697321456::0::1::::<><>::res://Scenes/game_scene.gd<>uid://fkrslh3yc2wr::::res://Scenes/UI/in_game_ui.tscn
-main_menu_background.tscn::PackedScene::4307950241605134228::1697315152::0::1::::<><>::uid://yqclqh6haplf::::res://Scenes/Maps/Map1.tres
+controlTest.tscn::PackedScene::637109507993321046::1697292659::0::1::::<><>::res://Scenes/controlTest.gd<>uid://bwykhj01gtgny
+debugging.tscn::PackedScene::5609152684927476435::1697315152::0::1::::<><>::uid://bnw4k6pqsn4mc
+game_scene.gd::GDScript::-1::1697381268::0::1::::<>Node2D<>::
+game_scene.tscn::PackedScene::7230455310029059183::1697381269::0::1::::<><>::res://Scenes/game_scene.gd<>uid://fkrslh3yc2wr::::res://Scenes/UI/in_game_ui.tscn
+main_menu_background.tscn::PackedScene::4307950241605134228::1697315152::0::1::::<><>::uid://yqclqh6haplf
 ScenceHandler.gd::GDScript::-1::1697290910::0::1::::<>Node2D<>::
-ScenceHandler.tscn::PackedScene::335998109864300913::1697321456::0::1::::<><>::res://Scenes/ScenceHandler.gd<>uid://crgx5k42a11nf::::res://Scenes/UI/main_menu.tscn
-::res://Scenes/Enemies/::1697321563
+ScenceHandler.tscn::PackedScene::335998109864300913::1697381268::0::1::::<><>::res://Scenes/ScenceHandler.gd<>uid://crgx5k42a11nf::::res://Scenes/UI/main_menu.tscn
+::res://Scenes/Enemies/::1697381269
 enemy_path.tscn::PackedScene::3429607316310322254::1697197314::0::1::::<><>::
-slime_enemy.gd::GDScript::-1::1697288708::0::1::::<>PathFollow2D<>::
-slime_enemy.tscn::PackedScene::4991252392095382237::1697321563::0::1::::<><>::uid://xhpho7i7b1t4::::res://Sprites/Enemies/U_Walk.png<>res://Scenes/Enemies/slime_enemy.gd
-::res://Scenes/Maps/::1697321456
+slime_enemy.gd::GDScript::-1::1697378577::0::1::::<>PathFollow2D<>::
+slime_enemy.tscn::PackedScene::4991252392095382237::1697381269::0::1::::<><>::uid://xhpho7i7b1t4::::res://Sprites/Enemies/U_Walk.png<>res://Scenes/Enemies/slime_enemy.gd<>uid://md1f87xi4335::::res://Sprites/Enemies/D_Death.png<>uid://dxkrjypqm0vr5::::res://Sprites/Health Bar/HealthBarUnder.png<>uid://cvt4w72ofmhqa::::res://Sprites/Health Bar/HealthBarOver.png
+::res://Scenes/Maps/::1697381268
 CharacterBody2D.gd::GDScript::-1::1697198523::0::1::::<>CharacterBody2D<>::
-Map1.gd::GDScript::-1::1697305395::0::1::::<>Node2D<>::
-Map1.tres::TileSet::1717704221701323847::1697316041::0::1::::<><>::uid://be1osv2tpocal::::res://Sprites/Tiles/Grass.png<>uid://cv8lfl2opqmbw::::res://Sprites/Tiles/Tilled Dirt.png<>uid://dkex5tj2iqb31::::res://Sprites/Background objects/Basic Grass Biom things 1.png<>uid://b1w4rbq8bh4t1::::res://Sprites/Tiles/Blank.png
-Map1.tscn::PackedScene::7589064003477535751::1697321456::0::1::::<><>::uid://yqclqh6haplf::::res://Scenes/Maps/Map1.tres<>res://Scenes/Maps/Map1.gd
-PathFollow2D.gd::GDScript::-1::1697199673::0::1::::<>PathFollow2D<>::
-::res://Scenes/Turrets/::1697321457
-blue_turret.gd::GDScript::-1::1697161344::0::1::::<>Node2D<>::
-blue_turret.tscn::PackedScene::1095659911177576003::1697321457::0::1::::<><>::uid://8hhggefih2qm::::res://Sprites/Turrets/turret_BASE.png<>res://Scenes/Turrets/blue_turret.gd<>uid://wmag5slmmgtg::::res://Sprites/Turrets/TurretRange.png<>uid://dph2wyw7lp4e1::::res://Sprites/Turrets/turret_FACE_blue.png
-red_turret.gd::GDScript::-1::1697161344::0::1::::<>Node2D<>::
-red_turret.tscn::PackedScene::3980740492832601954::1697321457::0::1::::<><>::uid://8hhggefih2qm::::res://Sprites/Turrets/turret_BASE.png<>res://Scenes/Turrets/red_turret.gd<>uid://wmag5slmmgtg::::res://Sprites/Turrets/TurretRange.png<>uid://bv6gbom2cs0b7::::res://Sprites/Turrets/turret_FACE - Copy.png
-::res://Scenes/UI/::1697321456
-in_game_ui.gd::GDScript::-1::1697319851::0::1::::<>Control<>::
-in_game_ui.tscn::PackedScene::372652918772934713::1697321456::0::1::::<><>::uid://cft5awshju13::::res://Sprites/Buttons/GreyPlay.png<>res://Scenes/UI/in_game_ui.gd<>uid://b1t2psius2bc5::::res://Sprites/Buttons/GreyPause.png<>uid://bwdnodle50wcr::::res://Sprites/Buttons/Exit.png<>uid://k7m2s644slwf::::res://Sprites/Buttons/ExitPressed.png<>uid://bbtwyflvr715r::::res://Sprites/Buttons/FastForward.png<>uid://6mhvp0l72y51::::res://Sprites/Buttons/FastForwardPressed.png<>uid://clv28ge1dxhce::::res://Sprites/Buttons/GreybuttonEmptyPressed.png<>uid://bv6gbom2cs0b7::::res://Sprites/Turrets/turret_FACE - Copy.png<>uid://dph2wyw7lp4e1::::res://Sprites/Turrets/turret_FACE_blue.png
+Map1.gd::GDScript::-1::1697381268::0::1::::<>Node2D<>::
+Map1.tres::TileSet::1717704221701323847::1697323407::0::1::::<><>::uid://be1osv2tpocal::::res://Sprites/Tiles/Grass.png<>uid://cv8lfl2opqmbw::::res://Sprites/Tiles/Tilled Dirt.png<>uid://dkex5tj2iqb31::::res://Sprites/Background objects/Basic Grass Biom things 1.png<>uid://b1w4rbq8bh4t1::::res://Sprites/Tiles/Blank.png
+Map1.tscn::PackedScene::7589064003477535751::1697381268::0::1::::<><>::uid://yqclqh6haplf::::res://Scenes/Maps/Map1.tres<>res://Scenes/Maps/Map1.gd
+PathFollow2D.gd::GDScript::-1::1697367934::0::1::::<>PathFollow2D<>::
+::res://Scenes/Turrets/::1697381269
+blue_turret.gd::GDScript::-1::1697377386::0::1::::<>Node2D<>::
+blue_turret.tscn::PackedScene::1095659911177576003::1697381269::0::1::::<><>::uid://8hhggefih2qm::::res://Sprites/Turrets/turret_BASE.png<>res://Scenes/Turrets/blue_turret.gd<>uid://wmag5slmmgtg::::res://Sprites/Turrets/TurretRange.png<>uid://dph2wyw7lp4e1::::res://Sprites/Turrets/turret_FACE_blue.png
+red_turret.gd::GDScript::-1::1697377303::0::1::::<>Node2D<>::
+red_turret.tscn::PackedScene::3980740492832601954::1697381269::0::1::::<><>::uid://8hhggefih2qm::::res://Sprites/Turrets/turret_BASE.png<>res://Scenes/Turrets/red_turret.gd<>uid://wmag5slmmgtg::::res://Sprites/Turrets/TurretRange.png<>uid://bv6gbom2cs0b7::::res://Sprites/Turrets/turret_FACE - Copy.png
+::res://Scenes/UI/::1697381653
+in_game_ui.gd::GDScript::-1::1697381653::0::1::::<>Control<>::
+in_game_ui.tscn::PackedScene::372652918772934713::1697381268::0::1::::<><>::uid://cft5awshju13::::res://Sprites/Buttons/GreyPlay.png<>res://Scenes/UI/in_game_ui.gd<>uid://b1t2psius2bc5::::res://Sprites/Buttons/GreyPause.png<>uid://dxkrjypqm0vr5::::res://Sprites/Health Bar/HealthBarUnder.png<>uid://bwdnodle50wcr::::res://Sprites/Buttons/Exit.png<>uid://k7m2s644slwf::::res://Sprites/Buttons/ExitPressed.png<>uid://cvt4w72ofmhqa::::res://Sprites/Health Bar/HealthBarOver.png<>uid://bbtwyflvr715r::::res://Sprites/Buttons/FastForward.png<>uid://6mhvp0l72y51::::res://Sprites/Buttons/FastForwardPressed.png<>uid://br7vppgxs0ij4::::res://Scenes/UI/coin.tscn<>uid://clv28ge1dxhce::::res://Sprites/Buttons/GreybuttonEmptyPressed.png<>uid://bv6gbom2cs0b7::::res://Sprites/Turrets/turret_FACE - Copy.png<>uid://lflbtisfcc2w::::res://Fonts/ka1.ttf<>uid://dph2wyw7lp4e1::::res://Sprites/Turrets/turret_FACE_blue.png
 main_menu.gd::GDScript::-1::1697196480::0::1::::<>Control<>::
-main_menu.tscn::PackedScene::5979888611668525207::1697310804::0::1::::<><>::res://Scenes/UI/main_menu.gd<>uid://lk0npo56qlod::::res://Sprites/Buttons/GreyButtonEmptyLong.png<>uid://60xewryh40n8::::res://Sprites/Buttons/GreybuttonEmptyPressedLong.png<>uid://b2m2ktuxf7coa::::res://Scenes/main_menu_background.tscn<>uid://lflbtisfcc2w::::res://Fonts/ka1.ttf
-::res://Sprites/::1697192957
+main_menu.tscn::PackedScene::5979888611668525207::1697310804::0::1::::<><>::res://Scenes/UI/main_menu.gd<>uid://lk0npo56qlod
+coin.tscn::PackedScene::3646993755615373239::1697324954::0::1::::<><>::res://Coin.gd<>uid://dpc2la0xdvwo3::::res://Sprites/Other/coin3_16x16.png
+NotEnoughMoney.tscn::PackedScene::1496416816400743963::1697326172::0::1::::<><>::uid://lflbtisfcc2w::::res://Fonts/ka1.ttf
+game_lost_screen.tscn::PackedScene::7716878654003140683::1697381653::0::1::::<><>::uid://lflbtisfcc2w::::res://Fonts/ka1.ttf
+::res://Sprites/::1697370519
 ::res://Sprites/Background objects/::1697159396
 Basic Grass Biom things 1.png::CompressedTexture2D::7870859076211612278::1697158353::1697159396::1::::<><>::
 ::res://Sprites/Bullets/::1697159396
 turret_BULLET.png::CompressedTexture2D::2273026101515465214::1697158515::1697159396::1::::<><>::
-::res://Sprites/Buttons/::1697213767
+::res://Sprites/Buttons/::1697382211
 Exit.png::CompressedTexture2D::3937582873798364309::1697193157::1697201561::1::::<><>::
 ExitPressed.png::CompressedTexture2D::768726339525207901::1697193255::1697201561::1::::<><>::
 FastForward.png::CompressedTexture2D::2497211618140598629::1697213763::1697213767::1::::<><>::
@@ -54,15 +60,23 @@ GreybuttonEmptyPressedLong.png::CompressedTexture2D::2228868413516098519::169719
 GreyPause - Copy.png::CompressedTexture2D::2687110906375578355::1697193255::1697201561::1::::<><>::
 GreyPause.png::CompressedTexture2D::4252220900034909662::1697193255::1697201282::1::::<><>::
 GreyPlay.png::CompressedTexture2D::151906807539340248::1697193157::1697201282::1::::<><>::
-::res://Sprites/Enemies/::1697191793
+Restart.png::CompressedTexture2D::2611903500224269872::1697193158::1697382213::1::::<><>::
+RestartPressed.png::CompressedTexture2D::1514452042902233927::1697193255::1697382213::1::::<><>::
+::res://Sprites/Enemies/::1697377908
+D_Death.png::CompressedTexture2D::850048611461195150::1697113988::1697377908::1::::<><>::
 U_Walk.png::CompressedTexture2D::1629718088568954003::1697113988::1697191793::1::::<><>::
+::res://Sprites/Health Bar/::1697371781
+HealthBarOver.png::CompressedTexture2D::6287832064468334828::1697371777::1697371781::1::::<><>::
+HealthBarUnder.png::CompressedTexture2D::8795298777793299708::1697371389::1697371399::1::::<><>::
+::res://Sprites/Other/::1697323184
+coin3_16x16.png::CompressedTexture2D::8217882503365542344::1697323063::1697323184::1::::<><>::
 ::res://Sprites/Tiles/::1697313838
 Blank.png::CompressedTexture2D::4258538158899104252::1697313833::1697313838::1::::<><>::
 Grass.png::CompressedTexture2D::2721733207623746323::1697158353::1697159396::1::::<><>::
 Tilled Dirt.png::CompressedTexture2D::6315608985682164952::1697158353::1697159396::1::::<><>::
-::res://Sprites/Turrets/::1697318114
+::res://Sprites/Turrets/::1697376169
 TurretRange.png::CompressedTexture2D::1568939411872147876::1697316645::1697316650::1::::<><>::
-turrets.gd::GDScript::-1::1697318114::0::1::::<>Node2D<>::
+turrets.gd::GDScript::-1::1697376169::0::1::::<>Node2D<>::
 turret_BASE.png::CompressedTexture2D::2331118539603774960::1697158511::1697159396::1::::<><>::
 turret_FACE - Copy.png::CompressedTexture2D::3924748953312858422::1697158517::1697159396::1::::<><>::
 turret_FACE_blue.png::CompressedTexture2D::8228225292214166718::1697158719::1697159396::1::::<><>::

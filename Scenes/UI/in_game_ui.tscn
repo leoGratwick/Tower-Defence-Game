@@ -1,15 +1,25 @@
-[gd_scene load_steps=11 format=3 uid="uid://fkrslh3yc2wr"]
+[gd_scene load_steps=16 format=3 uid="uid://fkrslh3yc2wr"]
 
 [ext_resource type="Texture2D" uid="uid://cft5awshju13" path="res://Sprites/Buttons/GreyPlay.png" id="1_fr46p"]
 [ext_resource type="Script" path="res://Scenes/UI/in_game_ui.gd" id="1_qgqrn"]
 [ext_resource type="Texture2D" uid="uid://b1t2psius2bc5" path="res://Sprites/Buttons/GreyPause.png" id="2_2lst6"]
+[ext_resource type="Texture2D" uid="uid://dxkrjypqm0vr5" path="res://Sprites/Health Bar/HealthBarUnder.png" id="2_4iqby"]
 [ext_resource type="Texture2D" uid="uid://bwdnodle50wcr" path="res://Sprites/Buttons/Exit.png" id="2_8gv3h"]
 [ext_resource type="Texture2D" uid="uid://k7m2s644slwf" path="res://Sprites/Buttons/ExitPressed.png" id="3_lo186"]
+[ext_resource type="Texture2D" uid="uid://cvt4w72ofmhqa" path="res://Sprites/Health Bar/HealthBarOver.png" id="3_tyu5a"]
 [ext_resource type="Texture2D" uid="uid://bbtwyflvr715r" path="res://Sprites/Buttons/FastForward.png" id="4_2b23o"]
 [ext_resource type="Texture2D" uid="uid://6mhvp0l72y51" path="res://Sprites/Buttons/FastForwardPressed.png" id="5_a1rij"]
+[ext_resource type="PackedScene" uid="uid://br7vppgxs0ij4" path="res://Scenes/UI/coin.tscn" id="6_62kjm"]
 [ext_resource type="Texture2D" uid="uid://clv28ge1dxhce" path="res://Sprites/Buttons/GreybuttonEmptyPressed.png" id="6_u2w5w"]
 [ext_resource type="Texture2D" uid="uid://bv6gbom2cs0b7" path="res://Sprites/Turrets/turret_FACE - Copy.png" id="7_ufib3"]
+[ext_resource type="FontFile" uid="uid://lflbtisfcc2w" path="res://Fonts/ka1.ttf" id="7_yx72r"]
 [ext_resource type="Texture2D" uid="uid://dph2wyw7lp4e1" path="res://Sprites/Turrets/turret_FACE_blue.png" id="8_e7ohq"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_21e3d"]
+font = ExtResource("7_yx72r")
+font_size = 36
+font_color = Color(0, 0, 0, 1)
+outline_size = 15
 
 [node name="In game UI" type="Control"]
 process_mode = 3
@@ -32,6 +42,18 @@ theme_override_constants/margin_left = 30
 theme_override_constants/margin_top = 30
 theme_override_constants/margin_right = 30
 theme_override_constants/margin_bottom = 30
+
+[node name="HealthBar" type="TextureProgressBar" parent="MarginContainer"]
+texture_filter = 1
+custom_minimum_size = Vector2(520, 44)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+value = 100.0
+nine_patch_stretch = true
+texture_under = ExtResource("2_4iqby")
+texture_progress = ExtResource("3_tyu5a")
+tint_progress = Color(0, 0.807843, 0.305882, 1)
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 custom_minimum_size = Vector2(70, 550)
@@ -64,34 +86,51 @@ texture_normal = ExtResource("4_2b23o")
 texture_pressed = ExtResource("5_a1rij")
 stretch_mode = 5
 
-[node name="Control2" type="Control" parent="MarginContainer/VBoxContainer"]
-z_index = 4
-custom_minimum_size = Vector2(0, 40)
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 70)
 layout_mode = 2
+alignment = 1
+
+[node name="Control" type="Control" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+
+[node name="Coin" parent="MarginContainer/VBoxContainer/HBoxContainer/Control" instance=ExtResource("6_62kjm")]
+scale = Vector2(3.5, 3.5)
+
+[node name="Money" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+texture_filter = 1
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+size_flags_horizontal = 8
+text = "100"
+label_settings = SubResource("LabelSettings_21e3d")
 
 [node name="RedTurret" type="TextureButton" parent="MarginContainer/VBoxContainer"]
 texture_filter = 1
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(70, 70)
 layout_mode = 2
 texture_normal = ExtResource("6_u2w5w")
 stretch_mode = 5
 
 [node name="Sprite2D" type="Sprite2D" parent="MarginContainer/VBoxContainer/RedTurret"]
-position = Vector2(50, 50)
-scale = Vector2(2, 2)
+position = Vector2(78, 36)
+scale = Vector2(1.5, 1.5)
 texture = ExtResource("7_ufib3")
 vframes = 10
 
 [node name="BlueTurret" type="TextureButton" parent="MarginContainer/VBoxContainer"]
 texture_filter = 1
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(70, 70)
 layout_mode = 2
 texture_normal = ExtResource("6_u2w5w")
 stretch_mode = 5
 
 [node name="Sprite2D3" type="Sprite2D" parent="MarginContainer/VBoxContainer/BlueTurret"]
-position = Vector2(47, 51)
-scale = Vector2(2, 2)
+position = Vector2(77, 37)
+scale = Vector2(1.5, 1.5)
 texture = ExtResource("8_e7ohq")
 vframes = 10
 
@@ -104,7 +143,7 @@ process_mode = 3
 texture_filter = 1
 custom_minimum_size = Vector2(70, 70)
 layout_mode = 2
-size_flags_horizontal = 8
+size_flags_horizontal = 4
 size_flags_vertical = 8
 toggle_mode = true
 texture_normal = ExtResource("2_8gv3h")

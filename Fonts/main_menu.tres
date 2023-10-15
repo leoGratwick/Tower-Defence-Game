@@ -1,0 +1,8 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://c0y8q3qvvk55f"]
+
+[ext_resource type="FontFile" uid="uid://lflbtisfcc2w" path="res://Fonts/ka1.ttf" id="1_6sosl"]
+
+[resource]
+font = ExtResource("1_6sosl")
+font_size = 36
+font_color = Color(0.84, 0.861333, 1, 1)

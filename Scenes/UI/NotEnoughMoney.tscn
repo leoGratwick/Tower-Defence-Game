@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://vk41b5dtnskh"]
+
+[ext_resource type="FontFile" uid="uid://lflbtisfcc2w" path="res://Fonts/ka1.ttf" id="1_8hadb"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_o4mfg"]
+font = ExtResource("1_8hadb")
+font_size = 70
+font_color = Color(0.839216, 0.282353, 0.231373, 1)
+outline_size = 30
+outline_color = Color(0, 0, 0, 1)
+
+[node name="NotEnoughMoney" type="HBoxContainer"]
+z_index = 15
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+alignment = 1
+
+[node name="Label" type="Label" parent="."]
+texture_filter = 1
+layout_mode = 2
+text = "Not Enough
+Money !	"
+label_settings = SubResource("LabelSettings_o4mfg")
+horizontal_alignment = 1
