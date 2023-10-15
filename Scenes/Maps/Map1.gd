@@ -5,7 +5,10 @@ var currently_spawning = false
 var current_wave = 0
 var total_waves = enemy_waves.size()
 var finished_spawning_all = false
+var round_won_notified = false
 signal start_spawning_enemies 
+signal round_won
+var enemies = []
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass
@@ -17,6 +20,10 @@ func _physics_process(delta):
 		if !currently_spawning:
 			currently_spawning = true
 			start_spawning_enemies.emit()
+	elif finished_spawning_all and get_node("Enemy Path").get_children().size() == 0 and !round_won_notified:
+		round_won.emit()
+		round_won_notified = true
+		
 	
 		
 		
@@ -25,6 +32,8 @@ func spawn(enemy_type):
 		var enemy = load("res://Scenes/Enemies/"+ enemy_type +".tscn").instantiate()
 		get_node("Enemy Path").add_child(enemy)
 		get_parent().get_node("In game UI").connect_enemy(enemy)
+		get_parent().get_node("In game UI").move_child(enemy,0)
+		enemies.append(enemy)
 		
 
 	

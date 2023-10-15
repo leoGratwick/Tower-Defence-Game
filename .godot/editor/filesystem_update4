@@ -21,3 +21,4 @@ res://Scenes/Turrets/red_turret.gd
 res://Scenes/UI/game_lost_screen.gd
 res://Scenes/UI/game_lost_screen.tscn
 res://Scenes/ScenceHandler.gd
+res://Fonts/game_lost_screen.tres

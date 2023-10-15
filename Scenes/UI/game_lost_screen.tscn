@@ -1,18 +1,12 @@
 [gd_scene load_steps=8 format=3 uid="uid://dh7d4m06m8lqx"]
 
-[ext_resource type="FontFile" uid="uid://lflbtisfcc2w" path="res://Fonts/ka1.ttf" id="1_jraed"]
 [ext_resource type="Script" path="res://Scenes/UI/game_lost_screen.gd" id="1_ki1c3"]
+[ext_resource type="Texture2D" uid="uid://cvt4w72ofmhqa" path="res://Sprites/Health Bar/HealthBarOver.png" id="2_xmg4u"]
 [ext_resource type="Texture2D" uid="uid://bwdnodle50wcr" path="res://Sprites/Buttons/Exit.png" id="3_l0hdf"]
+[ext_resource type="LabelSettings" uid="uid://dwd2ucgwsnmnn" path="res://Fonts/game_lost_screen.tres" id="4_fcprh"]
 [ext_resource type="Texture2D" uid="uid://k7m2s644slwf" path="res://Sprites/Buttons/ExitPressed.png" id="4_is1ds"]
 [ext_resource type="Texture2D" uid="uid://bdhhw0oew6eu7" path="res://Sprites/Buttons/Restart.png" id="5_f3ctd"]
 [ext_resource type="Texture2D" uid="uid://vtu2lj18dxu2" path="res://Sprites/Buttons/RestartPressed.png" id="6_x3pjn"]
-
-[sub_resource type="LabelSettings" id="LabelSettings_wd5qv"]
-font = ExtResource("1_jraed")
-font_size = 70
-font_color = Color(0.839216, 0.282353, 0.231373, 1)
-outline_size = 30
-outline_color = Color(0, 0, 0, 1)
 
 [node name="GameLostScreen" type="Control"]
 z_index = 16
@@ -42,6 +36,12 @@ theme_override_constants/margin_bottom = 30
 layout_mode = 2
 alignment = 1
 
+[node name="Sprite2D" type="Sprite2D" parent="MarginContainer/HBoxContainer3"]
+modulate = Color(0, 0, 0, 0.498039)
+position = Vector2(571, 298)
+scale = Vector2(15.8231, 97.6591)
+texture = ExtResource("2_xmg4u")
+
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HBoxContainer3"]
 layout_mode = 2
 alignment = 2
@@ -66,7 +66,7 @@ stretch_mode = 5
 texture_filter = 1
 layout_mode = 2
 text = "You Lost !"
-label_settings = SubResource("LabelSettings_wd5qv")
+label_settings = ExtResource("4_fcprh")
 horizontal_alignment = 1
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="MarginContainer/HBoxContainer3"]

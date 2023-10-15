@@ -1,0 +1,10 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://dlgtuluait8mj"]
+
+[ext_resource type="FontFile" uid="uid://lflbtisfcc2w" path="res://Fonts/ka1.ttf" id="1_aftgm"]
+
+[resource]
+font = ExtResource("1_aftgm")
+font_size = 70
+font_color = Color(0.231373, 0.670588, 0.411765, 1)
+outline_size = 30
+outline_color = Color(0, 0, 0, 1)

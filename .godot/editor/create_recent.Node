@@ -1,13 +1,13 @@
+CollisionShape2D
+Area2D
+Sprite2D
 Control
 VBoxContainer
 HBoxContainer
 MarginContainer
 TextureProgressBar
-CollisionShape2D
-Area2D
 Label
 AnimationPlayer
-Sprite2D
 TileMap
 Node2D
 TextureButton

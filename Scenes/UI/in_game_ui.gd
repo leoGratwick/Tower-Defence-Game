@@ -5,7 +5,7 @@ extends Control
 var build_valid = false
 var building_name 
 var build_mode = false
-var money = 40
+var money = 100
 var red_price = 20
 var blue_price = 30
 var health = 100
@@ -15,7 +15,8 @@ var lost = false
 func _ready():
 	get_node("MarginContainer/HealthBar").max_value = health
 	get_node("MarginContainer/VBoxContainer/HBoxContainer/Control/Coin/Sprite2D/AnimationPlayer").speed_scale = 1
-
+	game_scene.get_child(1).connect("round_won", game_won)
+	
 func _physics_process(delta):
 	get_node("MarginContainer/VBoxContainer/HBoxContainer/Money").text = str(money)
 	get_node("MarginContainer/HealthBar").value = health
@@ -33,7 +34,15 @@ func _on_exit_pressed():
 
 func _on_play_pause_pressed():
 	get_tree().paused = !get_tree().paused
-	pass
+	var enemies = game_scene.get_child(1).enemies
+	if get_tree().paused:
+		for enemy in enemies:
+			enemy.disable_collision()
+	else:
+		for enemy in enemies:
+			enemy.enable_collision()
+	PhysicsServer2D.set_active(true)
+	
 
 
 func _on_fast_forward_pressed():
@@ -57,12 +66,14 @@ func _on_blue_turret_pressed():
 	
 	
 func start_build_preview_mode(building__name):
+	physics_true()
 	building_name = building__name
 	build_mode = true
 	game_scene.build_mode_on()
 	var building = load("res://Scenes/Turrets/"+ building_name+".tscn").instantiate()
 	building.name = "DragTower"
 	building.get_node("Area2D/TurretRange").show()
+	building.position = get_global_mouse_position()
 	var control = Control.new()
 	control.modulate = Color("#47ff007b")
 	control.name = "BuildingPreview"
@@ -131,12 +142,26 @@ func enemy_killed(reward):
 	money += reward
 
 func game_lost():
+	game_scene.game_over = true
 	print("lost game")
 	get_tree().paused = true
 	var game_lost_screen = load("res://Scenes/UI/game_lost_screen.tscn").instantiate()
 	game_lost_screen.position = get_viewport_rect().size / 2
 	game_scene.add_child(game_lost_screen)
 	queue_free()
+	
+func game_won():
+	game_scene.game_over = true
+	get_tree().paused = true
+	var game_won_screen = load("res://Scenes/UI/game_lost_screen.tscn").instantiate()
+	game_won_screen.position = get_viewport_rect().size / 2
+	game_won_screen.get_node("MarginContainer/HBoxContainer3/Label").text = "You Won"
+	game_won_screen.get_node("MarginContainer/HBoxContainer3/Label").label_settings = load("res://Fonts/game_won_screen.tres")
+	game_scene.add_child(game_won_screen)
+	queue_free()
+	
+func physics_true():
+	PhysicsServer2D.set_active(true)
 	
 	
 
