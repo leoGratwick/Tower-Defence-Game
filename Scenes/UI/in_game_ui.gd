@@ -5,7 +5,7 @@ extends Control
 var build_valid = false
 var building_name 
 var build_mode = false
-var money = 100
+var money = 50
 var red_price = 20
 var blue_price = 30
 var health = 100
@@ -17,7 +17,7 @@ func _ready():
 	get_node("MarginContainer/VBoxContainer/HBoxContainer/Control/Coin/Sprite2D/AnimationPlayer").speed_scale = 1
 	game_scene.get_child(1).connect("round_won", game_won)
 	
-func _physics_process(delta):
+func _physics_process(_delta):
 	get_node("MarginContainer/VBoxContainer/HBoxContainer/Money").text = str(money)
 	get_node("MarginContainer/HealthBar").value = health
 

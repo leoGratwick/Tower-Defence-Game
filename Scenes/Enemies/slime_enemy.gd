@@ -6,7 +6,7 @@ signal enemy_progressed
 signal enemy_killed 
 var damage = 20
 var health = 50
-var money_for_killing = 7
+var money_for_killing = 3
 
 
 @onready var sprite = get_node("CharacterBody2D/Sprite2D")

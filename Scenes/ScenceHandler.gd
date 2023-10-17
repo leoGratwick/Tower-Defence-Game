@@ -15,10 +15,6 @@ func new_game_pressed():
 	get_tree().paused = true
 	
 	
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
-	
 func game_quit():
 	get_tree().quit()
 	

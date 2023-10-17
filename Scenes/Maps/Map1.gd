@@ -1,6 +1,6 @@
 extends Node2D
 
-var enemy_waves = [["slime_enemy","slime_enemy"], ["slime_enemy"], ["slime_enemy","slime_enemy", "slime_enemy"]]
+var enemy_waves = [["slime_enemy","slime_enemy"], ["slime_enemy"], ["slime_enemy","slime_enemy", "slime_enemy","slime_enemy","slime_enemy","slime_enemy"],["slime_enemy","slime_enemy"],["slime_enemy"], ["slime_enemy","slime_enemy", "slime_enemy","slime_enemy","slime_enemy","slime_enemy"], ["slime_enemy","slime_enemy"], ["slime_enemy"], ["slime_enemy","slime_enemy", "slime_enemy","slime_enemy","slime_enemy","slime_enemy"],["slime_enemy","slime_enemy"], ["slime_enemy"]]
 var currently_spawning = false
 var current_wave = 0
 var total_waves = enemy_waves.size()
@@ -14,7 +14,7 @@ func _ready():
 	pass
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _physics_process(delta):
+func _physics_process(_delta):
 	
 	if !finished_spawning_all:
 		if !currently_spawning:
@@ -32,7 +32,7 @@ func spawn(enemy_type):
 		var enemy = load("res://Scenes/Enemies/"+ enemy_type +".tscn").instantiate()
 		get_node("Enemy Path").add_child(enemy)
 		get_parent().get_node("In game UI").connect_enemy(enemy)
-		get_parent().get_node("In game UI").move_child(enemy,0)
+		get_node("Enemy Path").move_child(enemy,0)
 		enemies.append(enemy)
 		
 

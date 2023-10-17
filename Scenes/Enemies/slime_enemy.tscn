@@ -21,10 +21,9 @@ tracks/0/keys = {
 "values": [0]
 }
 
-[sub_resource type="Animation" id="Animation_8cktp"]
-resource_name = "walk"
-length = 0.5
-loop_mode = 1
+[sub_resource type="Animation" id="Animation_arl2x"]
+resource_name = "death"
+length = 0.6
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -38,9 +37,10 @@ tracks/0/keys = {
 "values": [0, 1, 2, 3, 4, 5]
 }
 
-[sub_resource type="Animation" id="Animation_arl2x"]
-resource_name = "death"
-length = 0.6
+[sub_resource type="Animation" id="Animation_8cktp"]
+resource_name = "walk"
+length = 0.5
+loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true

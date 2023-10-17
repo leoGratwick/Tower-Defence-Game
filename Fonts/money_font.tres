@@ -1,0 +1,9 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://cxqpty1vyo4kb"]
+
+[ext_resource type="FontFile" uid="uid://lflbtisfcc2w" path="res://Fonts/ka1.ttf" id="1_l3qcd"]
+
+[resource]
+font = ExtResource("1_l3qcd")
+font_size = 36
+font_color = Color(0, 0, 0, 1)
+outline_size = 15

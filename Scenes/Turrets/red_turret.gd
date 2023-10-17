@@ -7,7 +7,7 @@ var reload_time = 2
 
 
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	if shoot and enemies_in_range.size() !=0 :
 		turn(enemies_in_range[0].get_parent().get_global_position())
 		if !reloading:
