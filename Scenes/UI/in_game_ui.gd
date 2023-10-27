@@ -37,10 +37,12 @@ func _on_play_pause_pressed():
 	var enemies = game_scene.get_child(1).enemies
 	if get_tree().paused:
 		for enemy in enemies:
-			enemy.disable_collision()
+			if enemy is PathFollow2D:
+				enemy.disable_collision()
 	else:
 		for enemy in enemies:
-			enemy.enable_collision()
+			if enemy is PathFollow2D:
+				enemy.enable_collision()
 	PhysicsServer2D.set_active(true)
 	
 

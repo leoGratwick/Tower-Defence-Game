@@ -21,6 +21,7 @@ func _physics_process(delta):
 			
 	# only moves forward when on frames of enemy in the air
 	if progress_ratio >= 0.99:
+		get_parent().get_parent().enemies.erase(self)
 		queue_free()
 		enemy_progressed.emit(damage)
 		

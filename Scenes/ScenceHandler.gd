@@ -14,7 +14,7 @@ func new_game_pressed():
 	add_child(game_scene)
 	get_tree().paused = true
 	
-	
+
 func game_quit():
 	get_tree().quit()
 	

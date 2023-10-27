@@ -1,57 +1,61 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1697564036
-Coin.gd::GDScript::-1::1697323407::0::1::::<>Node2D<>::
-default_env.tres::Environment::8099985550878108818::1697555253::0::1::::<><>::
+::res://::1698439192
+Coin.gd::GDScript::-1::1697564659::0::1::::<>Node2D<>::
+default_env.tres::Environment::8099985550878108818::1698438992::0::1::::<><>::
 export_presets.cfg::TextFile::-1::1697413482::0::1::::<><>::
 icon.png::CompressedTexture2D::6991110015692068151::1697157705::1697159396::1::::<><>::
-README.md::TextFile::-1::1697322102::0::1::::<><>::
-::res://Fonts/::1697554855
-game_lost_screen.tres::LabelSettings::8711284934400672831::1697554855::0::1::::<><>::uid://lflbtisfcc2w::::res://Fonts/ka1.ttf
+README.md::TextFile::-1::1697564898::0::1::::<><>::
+::res://Fonts/::1698438457
+game_lost_screen.tres::LabelSettings::8711284934400672831::1698438457::0::1::::<><>::uid://lflbtisfcc2w::::res://Fonts/ka1.ttf
 game_won_screen.tres::LabelSettings::7944915545027094717::1697399461::0::1::::<><>::uid://lflbtisfcc2w
 ka1.ttf::FontFile::783069852629680340::1697195545::1697195621::1::::<><>::
 main_menu.tres::LabelSettings::6579141254251528377::1697412634::0::1::::<><>::uid://lflbtisfcc2w
-money_font.tres::LabelSettings::6421160801813711705::1697554855::0::1::::<><>::uid://lflbtisfcc2w::::res://Fonts/ka1.ttf
-::res://HTML export/::1697413866
+money_font.tres::LabelSettings::6421160801813711705::1698438457::0::1::::<><>::uid://lflbtisfcc2w::::res://Fonts/ka1.ttf
+::res://HTML export/::1698439152
 Tower defence game.apple-touch-icon.png::CompressedTexture2D::379697410268433860::1697413482::1697413866::1::::<><>::
 Tower defence game.icon.png::CompressedTexture2D::6390942721049198117::1697413482::1697413866::1::::<><>::
 Tower defence game.png::CompressedTexture2D::1324924988500371287::1697413482::1697413866::1::::<><>::
+::res://HTML export/HTML 2/::1698439218
+Tower defence game.apple-touch-icon.png::CompressedTexture2D::5530292278898397254::1698439193::1698439219::1::::<><>::
+Tower defence game.icon.png::CompressedTexture2D::3323470359549793788::1698439193::1698439219::1::::<><>::
+Tower defence game.png::CompressedTexture2D::8619440242669519407::1698439193::1698439219::1::::<><>::
 ::res://Liscence/::1697195612
 License.txt::TextFile::-1::1697113989::0::1::::<><>::
 liscence.txt::TextFile::-1::1697195571::0::1::::<><>::
 read_me.txt::TextFile::-1::1697158353::0::1::::<><>::
-::res://Scenes/::1697554855
+::res://Scenes/::1698438991
 controlTest.gd::GDScript::-1::1697284870::0::1::::<>Control<>::
 controlTest.tscn::PackedScene::637109507993321046::1697292659::0::1::::<><>::res://Scenes/controlTest.gd<>uid://bwykhj01gtgny
 debugging.tscn::PackedScene::5609152684927476435::1697315152::0::1::::<><>::uid://bnw4k6pqsn4mc
-game_scene.gd::GDScript::-1::1697404895::0::1::::<>Node2D<>::
-game_scene.tscn::PackedScene::7230455310029059183::1697554855::0::1::::<><>::res://Scenes/game_scene.gd<>uid://fkrslh3yc2wr::::res://Scenes/UI/in_game_ui.tscn
+game_scene.gd::GDScript::-1::1697564659::0::1::::<>Node2D<>::
+game_scene.tscn::PackedScene::7230455310029059183::1698438991::0::1::::<><>::res://Scenes/game_scene.gd<>uid://fkrslh3yc2wr::::res://Scenes/UI/in_game_ui.tscn
 main_menu_background.tscn::PackedScene::4307950241605134228::1697315152::0::1::::<><>::uid://yqclqh6haplf
-ScenceHandler.gd::GDScript::-1::1697386069::0::1::::<>Node2D<>::
-ScenceHandler.tscn::PackedScene::335998109864300913::1697554854::0::1::::<><>::res://Scenes/ScenceHandler.gd<>uid://crgx5k42a11nf::::res://Scenes/UI/main_menu.tscn
-::res://Scenes/Enemies/::1697554855
+ScenceHandler.gd::GDScript::-1::1698438457::0::1::::<>Node2D<>::
+ScenceHandler.tscn::PackedScene::335998109864300913::1698438991::0::1::::<><>::res://Scenes/ScenceHandler.gd<>uid://crgx5k42a11nf::::res://Scenes/UI/main_menu.tscn
+::res://Scenes/Enemies/::1698438992
 enemy_path.tscn::PackedScene::3429607316310322254::1697197314::0::1::::<><>::
-slime_enemy.gd::GDScript::-1::1697413142::0::1::::<>PathFollow2D<>::
-slime_enemy.tscn::PackedScene::4991252392095382237::1697554855::0::1::::<><>::uid://xhpho7i7b1t4::::res://Sprites/Enemies/U_Walk.png<>res://Scenes/Enemies/slime_enemy.gd<>uid://md1f87xi4335::::res://Sprites/Enemies/D_Death.png<>uid://dxkrjypqm0vr5::::res://Sprites/Health Bar/HealthBarUnder.png<>uid://cvt4w72ofmhqa::::res://Sprites/Health Bar/HealthBarOver.png
-::res://Scenes/Maps/::1697555253
+slime_enemy.gd::GDScript::-1::1698438991::0::1::::<>PathFollow2D<>::
+slime_enemy.tscn::PackedScene::4991252392095382237::1698438992::0::1::::<><>::uid://xhpho7i7b1t4::::res://Sprites/Enemies/U_Walk.png<>res://Scenes/Enemies/slime_enemy.gd<>uid://md1f87xi4335::::res://Sprites/Enemies/D_Death.png<>uid://dxkrjypqm0vr5::::res://Sprites/Health Bar/HealthBarUnder.png<>uid://cvt4w72ofmhqa::::res://Sprites/Health Bar/HealthBarOver.png
+::res://Scenes/Maps/::1698438991
 CharacterBody2D.gd::GDScript::-1::1697198523::0::1::::<>CharacterBody2D<>::
-Map1.gd::GDScript::-1::1697413387::0::1::::<>Node2D<>::
-Map1.tres::TileSet::1717704221701323847::1697554855::0::1::::<><>::uid://be1osv2tpocal::::res://Sprites/Tiles/Grass.png<>uid://cv8lfl2opqmbw::::res://Sprites/Tiles/Tilled Dirt.png<>uid://dkex5tj2iqb31::::res://Sprites/Background objects/Basic Grass Biom things 1.png<>uid://b1w4rbq8bh4t1::::res://Sprites/Tiles/Blank.png
-Map1.tscn::PackedScene::7589064003477535751::1697555253::0::1::::<><>::uid://yqclqh6haplf::::res://Scenes/Maps/Map1.tres<>res://Scenes/Maps/Map1.gd
+Map1.gd::GDScript::-1::1697564659::0::1::::<>Node2D<>::
+Map1.tres::TileSet::1717704221701323847::1698438456::0::1::::<><>::uid://be1osv2tpocal::::res://Sprites/Tiles/Grass.png<>uid://cv8lfl2opqmbw::::res://Sprites/Tiles/Tilled Dirt.png<>uid://dkex5tj2iqb31::::res://Sprites/Background objects/Basic Grass Biom things 1.png<>uid://b1w4rbq8bh4t1::::res://Sprites/Tiles/Blank.png
+Map1.tscn::PackedScene::7589064003477535751::1698438991::0::1::::<><>::uid://yqclqh6haplf::::res://Scenes/Maps/Map1.tres<>res://Scenes/Maps/Map1.gd
 PathFollow2D.gd::GDScript::-1::1697367934::0::1::::<>PathFollow2D<>::
-::res://Scenes/Turrets/::1697554855
-blue_turret.gd::GDScript::-1::1697406679::0::1::::<>Node2D<>::
-blue_turret.tscn::PackedScene::1095659911177576003::1697554855::0::1::::<><>::uid://8hhggefih2qm::::res://Sprites/Turrets/turret_BASE.png<>res://Scenes/Turrets/blue_turret.gd<>uid://wmag5slmmgtg::::res://Sprites/Turrets/TurretRange.png<>uid://dph2wyw7lp4e1::::res://Sprites/Turrets/turret_FACE_blue.png
-red_turret.gd::GDScript::-1::1697377303::0::1::::<>Node2D<>::
-red_turret.tscn::PackedScene::3980740492832601954::1697554855::0::1::::<><>::uid://8hhggefih2qm::::res://Sprites/Turrets/turret_BASE.png<>res://Scenes/Turrets/red_turret.gd<>uid://wmag5slmmgtg::::res://Sprites/Turrets/TurretRange.png<>uid://bv6gbom2cs0b7::::res://Sprites/Turrets/turret_FACE - Copy.png
-::res://Scenes/UI/::1697554966
+::res://Scenes/Turrets/::1698438992
+blue_turret.gd::GDScript::-1::1697564659::0::1::::<>Node2D<>::
+blue_turret.tscn::PackedScene::1095659911177576003::1698419326::0::1::::<><>::uid://8hhggefih2qm::::res://Sprites/Turrets/turret_BASE.png<>res://Scenes/Turrets/blue_turret.gd<>uid://wmag5slmmgtg::::res://Sprites/Turrets/TurretRange.png<>uid://dph2wyw7lp4e1::::res://Sprites/Turrets/turret_FACE_blue.png
+red_turret.gd::GDScript::-1::1698438457::0::1::::<>Node2D<>::
+red_turret.tscn::PackedScene::3980740492832601954::1698438992::0::1::::<><>::uid://8hhggefih2qm::::res://Sprites/Turrets/turret_BASE.png<>res://Scenes/Turrets/red_turret.gd<>uid://wmag5slmmgtg::::res://Sprites/Turrets/TurretRange.png<>uid://bv6gbom2cs0b7::::res://Sprites/Turrets/turret_FACE - Copy.png
+::res://Scenes/UI/::1698438992
 coin.tscn::PackedScene::3646993755615373239::1697324954::0::1::::<><>::res://Coin.gd<>uid://dpc2la0xdvwo3
-game_lost_screen.gd::GDScript::-1::1697384591::0::1::::<>Control<>::
-game_lost_screen.tscn::PackedScene::7716878654003140683::1697554855::0::1::::<><>::res://Scenes/UI/game_lost_screen.gd<>uid://cvt4w72ofmhqa::::res://Sprites/Health Bar/HealthBarOver.png<>uid://bwdnodle50wcr::::res://Sprites/Buttons/Exit.png<>uid://dwd2ucgwsnmnn::::res://Fonts/game_lost_screen.tres<>uid://k7m2s644slwf::::res://Sprites/Buttons/ExitPressed.png<>uid://bdhhw0oew6eu7::::res://Sprites/Buttons/Restart.png<>uid://vtu2lj18dxu2::::res://Sprites/Buttons/RestartPressed.png
-in_game_ui.gd::GDScript::-1::1697413038::0::1::::<>Control<>::
-in_game_ui.tscn::PackedScene::372652918772934713::1697554855::0::1::::<><>::uid://cft5awshju13::::res://Sprites/Buttons/GreyPlay.png<>res://Scenes/UI/in_game_ui.gd<>uid://b1t2psius2bc5::::res://Sprites/Buttons/GreyPause.png<>uid://dxkrjypqm0vr5::::res://Sprites/Health Bar/HealthBarUnder.png<>uid://bwdnodle50wcr::::res://Sprites/Buttons/Exit.png<>uid://k7m2s644slwf::::res://Sprites/Buttons/ExitPressed.png<>uid://cvt4w72ofmhqa::::res://Sprites/Health Bar/HealthBarOver.png<>uid://bbtwyflvr715r::::res://Sprites/Buttons/FastForward.png<>uid://6mhvp0l72y51::::res://Sprites/Buttons/FastForwardPressed.png<>uid://br7vppgxs0ij4::::res://Scenes/UI/coin.tscn<>uid://clv28ge1dxhce::::res://Sprites/Buttons/GreybuttonEmptyPressed.png<>uid://bv6gbom2cs0b7::::res://Sprites/Turrets/turret_FACE - Copy.png<>uid://dph2wyw7lp4e1::::res://Sprites/Turrets/turret_FACE_blue.png<>uid://cxqpty1vyo4kb::::res://Fonts/money_font.tres
-level_options.tscn::PackedScene::8463431327692149139::1697554966::0::1::::<><>::
-main_menu.gd::GDScript::-1::1697196480::0::1::::<>Control<>::
-main_menu.tscn::PackedScene::5979888611668525207::1697554856::0::1::::<><>::res://Scenes/UI/main_menu.gd<>uid://lk0npo56qlod::::res://Sprites/Buttons/GreyButtonEmptyLong.png<>uid://60xewryh40n8::::res://Sprites/Buttons/GreybuttonEmptyPressedLong.png<>uid://b2m2ktuxf7coa::::res://Scenes/main_menu_background.tscn<>uid://cvt4w72ofmhqa::::res://Sprites/Health Bar/HealthBarOver.png<>uid://lflbtisfcc2w::::res://Fonts/ka1.ttf
+game_lost_screen.gd::GDScript::-1::1697564659::0::1::::<>Control<>::
+game_lost_screen.tscn::PackedScene::7716878654003140683::1698438992::0::1::::<><>::res://Scenes/UI/game_lost_screen.gd<>uid://cvt4w72ofmhqa::::res://Sprites/Health Bar/HealthBarOver.png<>uid://bwdnodle50wcr::::res://Sprites/Buttons/Exit.png<>uid://dwd2ucgwsnmnn::::res://Fonts/game_lost_screen.tres<>uid://k7m2s644slwf::::res://Sprites/Buttons/ExitPressed.png<>uid://bdhhw0oew6eu7::::res://Sprites/Buttons/Restart.png<>uid://vtu2lj18dxu2::::res://Sprites/Buttons/RestartPressed.png
+in_game_ui.gd::GDScript::-1::1698438816::0::1::::<>Control<>::
+in_game_ui.tscn::PackedScene::372652918772934713::1698438991::0::1::::<><>::uid://cft5awshju13::::res://Sprites/Buttons/GreyPlay.png<>res://Scenes/UI/in_game_ui.gd<>uid://b1t2psius2bc5::::res://Sprites/Buttons/GreyPause.png<>uid://dxkrjypqm0vr5::::res://Sprites/Health Bar/HealthBarUnder.png<>uid://bwdnodle50wcr::::res://Sprites/Buttons/Exit.png<>uid://k7m2s644slwf::::res://Sprites/Buttons/ExitPressed.png<>uid://cvt4w72ofmhqa::::res://Sprites/Health Bar/HealthBarOver.png<>uid://bbtwyflvr715r::::res://Sprites/Buttons/FastForward.png<>uid://6mhvp0l72y51::::res://Sprites/Buttons/FastForwardPressed.png<>uid://br7vppgxs0ij4::::res://Scenes/UI/coin.tscn<>uid://clv28ge1dxhce::::res://Sprites/Buttons/GreybuttonEmptyPressed.png<>uid://bv6gbom2cs0b7::::res://Sprites/Turrets/turret_FACE - Copy.png<>uid://dph2wyw7lp4e1::::res://Sprites/Turrets/turret_FACE_blue.png<>uid://cxqpty1vyo4kb::::res://Fonts/money_font.tres
+level_options.tscn::PackedScene::8463431327692149139::1698438992::0::1::::<><>::
+main_menu.gd::GDScript::-1::1697564659::0::1::::<>Control<>::
+main_menu.tscn::PackedScene::5979888611668525207::1698438992::0::1::::<><>::res://Scenes/UI/main_menu.gd<>uid://lk0npo56qlod::::res://Sprites/Buttons/GreyButtonEmptyLong.png<>uid://60xewryh40n8::::res://Sprites/Buttons/GreybuttonEmptyPressedLong.png<>uid://b2m2ktuxf7coa::::res://Scenes/main_menu_background.tscn<>uid://cvt4w72ofmhqa::::res://Sprites/Health Bar/HealthBarOver.png<>uid://lflbtisfcc2w::::res://Fonts/ka1.ttf
 NotEnoughMoney.tscn::PackedScene::1496416816400743963::1697385069::0::1::::<><>::uid://lflbtisfcc2w
 ::res://Sprites/::1697370519
 ::res://Sprites/Background objects/::1697159396
